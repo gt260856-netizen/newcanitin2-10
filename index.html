@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CA Nitin | Free Stock Market Learning</title>
+<meta name="description" content="Learn stock market and finance basics in simple English with CA Nitin. Educational content only.">
+<meta name="theme-color" content="#1c0f1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1078820037898950');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1078820037898950&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  /* Theme: PLUM & ROSE GOLD — dark plum, rose-gold accent, blush detail; left-aligned card, photo top-right */
+  :root{
+    color-scheme:dark;
+    --bg:#1c0f1a; --panel:rgba(48,28,44,.55); --edge:rgba(240,169,136,.24);
+    --text:#fbf1f4; --muted:#c4a9b5; --soft:#ead6de;
+    --rose:#f0a988; --rose2:#f7c3a3; --blush:#ffd6e0;
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --en:"Figtree",-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--en);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+       min-height:100vh;overflow-x:hidden;
+       background-image:radial-gradient(ellipse 80% 45% at 0% 0%,rgba(240,169,136,.12),transparent 70%)}
+
+  .wrap{max-width:430px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top)) 16px calc(22px + env(safe-area-inset-bottom));
+        display:flex;flex-direction:column;gap:12px}
+  .glass{background:var(--panel);border:1px solid var(--edge);border-radius:22px;
+         -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+
+  .card{padding:22px 18px 20px}
+  .top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .name{font:700 22px/1.2 var(--display)}
+  .role{display:block;margin-top:4px;font-size:12.5px;color:var(--muted)}
+  .badge{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--bg);background:var(--blush);padding:5px 10px;border-radius:999px}
+  .av{width:66px;height:66px;border-radius:18px;position:relative;overflow:hidden;flex:0 0 auto;display:grid;place-items:center;
+      background:#3a2236;border:1.5px solid var(--rose);font:700 20px/1 var(--display);color:var(--rose)}
+  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  h1{margin-top:20px;font:700 26px/1.25 var(--display);text-wrap:balance}
+  h1 em{font-style:normal;color:var(--rose)}
+  .sub{margin-top:8px;font-size:14.5px;color:var(--soft)}
+
+  .learn{list-style:none;margin-top:16px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.08)}
+  .learn li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px;color:var(--soft)}
+  .learn svg{flex:0 0 auto;margin-top:3px}
+
+  /* CTA: light shine sweep + gentle breathing */
+  .cta{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:20px;padding:16px 14px;border-radius:14px;
+       text-decoration:none;color:#2a1222;font-weight:800;font-size:17.5px;line-height:1.3;
+       background:linear-gradient(100deg,var(--rose),var(--rose2));
+       box-shadow:0 8px 22px rgba(240,169,136,.28);animation:breathe 2.6s ease-in-out infinite;transition:transform .15s}
+  .cta::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+       background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite}
+  .cta:active{transform:scale(.97)}
+  .cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+  @keyframes shine{0%,55%{left:-60%}100%{left:130%}}
+  @keyframes breathe{0%,100%{transform:scale(1);box-shadow:0 8px 22px rgba(240,169,136,.28)}50%{transform:scale(1.025);box-shadow:0 10px 30px rgba(240,169,136,.45)}}
+
+  .timer{display:flex;align-items:center;gap:11px;margin-top:14px;font-size:13px;color:var(--soft)}
+  .ring{width:40px;height:40px;position:relative;flex:0 0 auto}
+  .ring svg{transform:rotate(-90deg)}
+  .ring .bg{stroke:rgba(255,255,255,.1)}
+  .ring .fg{stroke:var(--rose);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+  .ring b{position:absolute;inset:0;display:grid;place-items:center;font-weight:800;font-size:15px;color:var(--rose)}
+  .free{margin-top:10px;font-size:12px;color:var(--muted)}
+
+  .disc{padding:12px 14px;font-size:11px;line-height:1.7;color:var(--soft);border-radius:16px;border-color:rgba(255,214,224,.22);background:rgba(255,214,224,.04)}
+  .disc b{color:var(--blush)}
+  .foot{text-align:center;font-size:11px;line-height:1.6;color:var(--muted);padding:2px 6px}
+  .foot a{color:var(--muted)}
+
+  @media(prefers-reduced-motion:reduce){.cta,.cta::after{animation:none}.ring .fg{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <main class="card glass">
+    <div class="top">
+      <div>
+        <div class="name">CA Nitin</div>
+        <span class="role">Finance & stock market education</span>
+        <span class="badge">FREE CHANNEL</span>
+      </div>
+      <div class="av"><img src="https://github.com/itssky72001-ui/CA-Nitinn/releases/download/nitin/CA.Nitin.jpg" alt="CA Nitin" width="66" height="66" fetchpriority="high" onerror="this.remove()">CN</div>
+    </div>
+
+    <h1>Understand the numbers <em>behind</em> the market</h1>
+    <p class="sub">Simple, practical lessons on how companies and markets work, explained clearly.</p>
+
+    <ul class="learn">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f0a988" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Reading a company's financial statements</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f0a988" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>P/E ratio and valuation basics</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f0a988" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6M9 12h6M12 12v5"/></svg>How tax works on trading and investing</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f0a988" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Managing risk before chasing returns</li>
+    </ul>
+
+    <a href="#" class="cta js-cta">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="#2a1222" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.06-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+      Join Free Telegram Channel
+    </a>
+
+    <div class="timer js-timer-line">
+      <div class="ring">
+        <svg width="40" height="40" viewBox="0 0 44 44">
+          <circle class="bg" cx="22" cy="22" r="19" fill="none" stroke-width="4"/>
+          <circle class="fg js-ring" cx="22" cy="22" r="19" fill="none" stroke-width="4" stroke-dasharray="119.4" stroke-dashoffset="0"/>
+        </svg>
+        <b class="js-timer">8</b>
+      </div>
+      <div>Channel opens automatically in a few seconds</div>
+    </div>
+    <p class="free">100% Free • No payment • Leave anytime</p>
+  </main>
+
+  <div class="disc glass">
+    <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment, tax or legal advice, or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+  </div>
+
+  <div class="foot">
+    © <span id="yr"></span> CA Nitin • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+    This site is not a part of the Facebook website or Meta Platforms, Inc.
+  </div>
+</div>
+
+<script>
+(function () {
+  // ================= SETTINGS =================
+  var TG_LINK = "https://t.me/+2fr_jy7lbZ5kNTY1";
+  var AUTO_REDIRECT = true;   // false = sirf button se Telegram khulega
+  var TIMER_SECONDS = 8;
+  var RETURN_DELAY_MS = 300;  // dobara aane wale ko kitni jaldi bhejna hai
+  // ============================================
+
+  var KEY_VISITED = "rtt_visited", KEY_EVT = "rtt_sub";
+  var loadTime = Date.now();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  function setFlag(k){
+    try{localStorage.setItem(k,"1")}catch(e){}
+    document.cookie = k+"=1; max-age="+(60*60*24*180)+"; path=/; SameSite=Lax";
+  }
+  function hasFlag(k){
+    try{ if(localStorage.getItem(k)) return true }catch(e){}
+    return document.cookie.indexOf(k+"=1") !== -1;
+  }
+  function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
+
+  // TEST MODE: URL ke end me ?test lagao -> purane flags mit jayenge, har baar page normal khulega
+  if (/[?&]test\b/.test(location.search)) {
+    [KEY_VISITED, KEY_EVT].forEach(function(k){
+      try{localStorage.removeItem(k)}catch(e){}
+      document.cookie = k+"=; max-age=0; path=/; SameSite=Lax";
+    });
+  }
+
+  // Human interaction check: touch / scroll / mouse / keyboard
+  var interacted = false;
+  function markHuman(e){ if (e && e.isTrusted === false) return; interacted = true; }
+  ["pointerdown","touchstart","mousemove","keydown","wheel"].forEach(function(ev){
+    window.addEventListener(ev, markHuman, {passive:true, capture:true});
+  });
+  window.addEventListener("scroll", markHuman, {passive:true});
+
+  // Subscribe: sirf asli click, sirf ek baar, bot filter
+  function fireEventOnce(e){
+    if (hasFlag(KEY_EVT)) return;
+    if (navigator.webdriver) return;
+    if (Date.now() - loadTime < 800) return;
+    if (e && e.isTrusted === false) return;
+    if (!interacted) return;
+    if (typeof fbq === "function") fbq("track","Subscribe",{},{eventID:"rtt_sub_"+loadTime});
+    setFlag(KEY_EVT);
+  }
+
+  var cta = document.querySelector(".js-cta");
+  var timerLine = document.querySelector(".js-timer-line");
+  var timerEl = document.querySelector(".js-timer");
+  var ring = document.querySelector(".js-ring");
+  var C = 119.4, countdown;
+
+  cta.href = TG_LINK;
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (countdown) clearInterval(countdown);
+    fireEventOnce(e);
+    setTimeout(goTelegram, 300);
+  });
+
+  // Returning visitor: timer skip, turant Telegram, event nahi
+  if (hasFlag(KEY_VISITED)) {
+    timerLine.innerHTML = "<div>Opening channel…</div>";
+    setTimeout(goTelegram, RETURN_DELAY_MS);
+    return;
+  }
+
+  if (!AUTO_REDIRECT) { timerLine.style.display = "none"; return; }
+  var left = TIMER_SECONDS;
+  function paint(){
+    timerEl.textContent = left;
+    ring.style.strokeDashoffset = (C * (1 - left / TIMER_SECONDS)).toFixed(1);
+  }
+  paint();
+  countdown = setInterval(function(){
+    left--; paint();
+    if (left <= 0){ clearInterval(countdown); goTelegram(); }
+  }, 1000);
+})();
+</script>
+</body>
+</html>
